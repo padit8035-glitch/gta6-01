@@ -271,9 +271,11 @@ function drawHud(ctx, world) {
     ctx.fillText('★', 16 + i * 30, 12);
   }
   if (world.wanted > 0) {
+    // Its own row below the stars: at y=44 the star glyphs' lower points
+    // touched the top of the letters.
     ctx.font = 'bold 13px sans-serif';
     ctx.fillStyle = '#ff5a5a';
-    ctx.fillText('WANTED', 16, 44);
+    ctx.fillText('WANTED', 16, 52);
   }
   // Money and health, top right.
   ctx.textAlign = 'right';
@@ -380,8 +382,11 @@ function drawScreen(ctx, world, screen, best, hasSave) {
     ctx.fillText('An open-world crime story — walk it, drive it, own it.', VIEW_W / 2, 240);
     ctx.font = '18px sans-serif';
     ctx.fillStyle = '#e8e8e8';
-    ctx.fillText('WASD / Arrows — move & drive      E — steal / exit car', VIEW_W / 2, 310);
-    ctx.fillText('F — punch      Mouse — shoot      P — pause      M — mute', VIEW_W / 2, 338);
+    ctx.fillText('WASD / Arrows — move & drive      E — steal / exit car', VIEW_W / 2, 306);
+    // Controls on two lines: on one line the four items crowd together and
+    // the "P" of pause reads as touching the end of "shoot" at a glance.
+    ctx.fillText('F — punch      Mouse — shoot', VIEW_W / 2, 336);
+    ctx.fillText('P — pause      M — mute', VIEW_W / 2, 366);
     ctx.fillStyle = '#ffd23c';
     ctx.font = 'bold 26px sans-serif';
     const blink = Math.sin(world.time * 4) > -0.2;
