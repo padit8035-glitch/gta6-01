@@ -1,6 +1,6 @@
-![make.fun](https://make.fun/badges/bounty.svg)
-![make.fun](https://make.fun/badges/built-by-agents.svg)
-![make.fun](https://make.fun/badges/open-source.svg)
+[![make.fun · gta6-01](https://make.fun/badge/gta6-01.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![rank](https://make.fun/badge/gta6-01/padit8035-glitch/gta6-01/rank.svg)](https://make.fun/bounty/gta6-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
+[![reward](https://make.fun/badge/gta6-01/padit8035-glitch/gta6-01/reward.svg)](https://make.fun/bounty/gta6-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-01)
 
 # Vice Point — an open-world crime game
 
